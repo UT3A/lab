@@ -1,33 +1,123 @@
 // ====== 可編輯資料（研究主題 / 成員 / 圖庫） ======
 const areas = [
-  { id:'cv', title:'電腦視覺', desc:'自監督學習、目標檢測、追蹤與多模態理解。' , photo:'image/114/114AB8003_吳姿穎.jpg'},
-  { id:'med', title:'醫學影像', desc:'核醫/CT/MRI 影像處理、輔助診斷、模型壓縮與部署。' },
-  { id:'robot', title:'機器人/自駕', desc:'感測器融合、SLAM、路徑規劃與行為決策。' },
-  { id:'edge', title:'邊緣運算', desc:'量化、蒸餾與硬體加速，在 Jetson/ARM 上即時推論。' },
-  { id:'analog', title:'類比/混合訊號', desc:'CTLE/VGA/SAR-ADC 等電路設計與後模擬整合。' }
+  { id:'dl', title:'深度學習在產業的應用', 
+    desc:`參與科技部數位經濟多年期計畫以整合深度學習、大數據分析、聊天機器人與客戶關係管理系統進行以客戶為中心之精準行銷」主題已經協助多種產業導入人工智慧技術，提供行銷策略方案設計與優化客戶服務` ,
+    //photo:'image/114/114AB8003_吳姿穎.jpg'
+    },
+  { id:'Financial', 
+    title:'金融數據研究', 
+    desc:`金融數據可以區分為量化的股價資料，以及質化的新聞與各類產業報告本研究室致力於不同領域問題透過深度學習技術，提出不同的解決方案目前有科技部產學，與產業合作開發創新的技術也有大專生科技部計畫 透過各種金融研究方法，分析公司與產業狀況前景例如:強化式學習建構適性化理財機器人模型。` },
+  { id:'ai', 
+    title:'AI 應用在電子商務產業', 
+    desc:`隨著電子商務平台成為顧客消費的主要管道，各公司擁有大量的使用者行為資料包含網頁端各類瀏覽行為的收集、購買產品的消費紀錄，甚至廣告投放的成效這些大量且多樣化的消費者資訊，無法用傳統行銷分析手段分析客戶以提出行銷策略協助產業依照不同行銷需求導入AI技術，目前已有多家廠商合作與成果。`},
+  /*{ id:'edge', title:'邊緣運算', desc:`量化、蒸餾與硬體加速，在 Jetson/ARM 上即時推論。` },
+  { id:'analog', title:'類比/混合訊號', desc:`CTLE/VGA/SAR-ADC 等電路設計與後模擬整合。` }*/
 ];
 
 // 提供一組範例（請依需要替換/擴充）
 const members = [
   {
-    name:'林柏蒼', role:'faculty', roleLabel:'助理教授',
-    tags:['醫學影像','自監督','Python'],
-    // photo:'image/members/lin.jpg', // 有照片時打開這行
+    name:'鄭麗珍', role:'faculty', roleLabel:'教授',
+    tags:['Machine learning', 'FinTech',' AI in E marketing','Opinion mining','Business Intelligence', 'Social Computing'],
+    photo:'image/老師.jpg', 
     thumb:'LC',
-    bio:`伊利諾大學香檳分校電腦科學博士。研究興趣包含醫學影像 AI、弱標註學習與系統化實驗框架。課程：深度學習、影像處理。`,
+    bio:`目前是管理學院 學術副院長與IMBA 主任
+    目前的研究主要致力於將各種深度學習或是人工智慧的技術應用於解決產業實務的問題，包含知識圖譜、LLM 於產業應用、異常行為偵測(虛假資訊、網路攻擊)、數位行銷分析、數位金融的研究、輿情與社群分析等。
+    近年致力於老年促進健康相關議題，陸續跟長庚醫院、萬芳醫院醫生共同合作相關研究，將人工智慧相關創新技術協助改善老年健康生活。`,
     works:[
-      'Med-Track: End-to-end Medical Imaging Toolkit (2025)',
-      'Self-supervised Lesion Representation (MICCAI 2024)'
+      'Decision Support Systems(SCI)、 Information Processing & Manageme (SSCI)、Decision Sciences(SSCI) 、Electronic Commerce Research and Applications (SSCI) 、Electronic Commerce Research(SSCI) 、Journal of Medical Internet Research (SCI)等知名期刊，其他還有TSSCI與EI',
+      '學術服務部分，擔任國科會計畫審查委員，國際上是資管重要期刊Electronic Commerce Research and Applications (SSCI) 的Associate Editor。此外，也擔任多個SSCI/SCI/TSSCI/EI 學術期刊的論文審查委員，或是研討位的議程委員跟主席。',
+      '目前教授課程為 金融服務創新、網路行銷與資料分析、系統分析與設計、研究方法、行銷管理、金融科技與人工智慧應用等。'
     ]
   },
   {
-    name:'張語庭', role:'phd', roleLabel:'博士生',
+    name:'吳姿穎', role:'ms', roleLabel:'碩一生',
+    tags:['資料庫','財務分析'],
+    photo:'image/114/114AB8003_吳姿穎.jpg', 
+    thumb:'YT',
+    bio:'我畢業於北科大資訊與財金管理系，因實習接觸資料庫而培養了資料處理能力。平時熱衷於研究股票、關注市場趨勢，也喜歡透過旅遊拓展視野。期望在研究所期間精進資料分析並結合財務應用，持續培養跨域整合能力。',
+    works:['MAIL：t114ab8003@ntut.org.tw']
+  },
+  {
+    name:'林千惠', role:'ms', roleLabel:'碩一生',
+    tags:['前端(Vue.js)','後端(Spring Boot)'],
+    photo:'image/114/114AB8041_林千惠.jpg', 
+    thumb:'YT',
+    bio:'我畢業於北科資財，高中時是網頁選手，大學在精誠實習，對於系統開發比較了解。喜歡出國旅遊、追星、投資，人生目標是財富自由，歡迎跟我討論投資相關議題。',
+    works:['MAIL：t114ab8041@ntut.org.tw']
+  },
+  {
+    name:'李泓泯', role:'ms', roleLabel:'碩一生',
+    tags:['Python','Java','React','Vue.js','Spring Boot','Django','Flask','CNN','IoT','Linux 系統'],
+    photo:'image/114/114AB8042_李泓泯.png', 
+    thumb:'YT',
+    bio:`我畢業於北商大資管系，大家都叫我「李董」（這個綽號是高中時隨便取的）。
+    我的興趣是打羽球、打遊戲，還有「打程式」——程式就是我的武器。從高中當選手就一路寫到現在，我都用它來做各種有趣甚至有點奇怪的事。
+    有時候做事的時候，我會偷偷在「卷」，你永遠想不到我下一步會出什麼招。
+    我現在最大的願望，就是希望能把英文學好。`,
+    works:['MAIL：t114ab8042@ntut.org.tw']
+  },
+  {
+    name:'林承玄', role:'ms', roleLabel:'碩一生',
+    tags:['程式設計'],
+    photo:'image/114/114ab8048_林承玄.jpg', 
+    thumb:'YT',
+    bio:`我畢業於聯合大學資管系。我對人工智慧、資料分析以及人機互動相關的應用很有興趣，特別喜歡嘗試新技術與應用。課餘時間喜歡打遊戲、看小說。`,
+    works:['MAIL：t114ab8048@ntut.org.tw']
+  },
+  {
+    name:'葉千熏', role:'ms', roleLabel:'碩一生',
+    tags:['前端設計','前端工程'],
+    photo:'image/114/114AB8050_葉千熏.jpg', 
+    thumb:'YT',
+    bio:`我的名字念很快發音會很像煙燻，所以可以叫我煙燻或燻雞。對AI領域很有興趣，曾在國家實驗研究院科政中心做資料處理與分析。興趣是唱歌、運動(但不喜歡跑步)、去海邊看夕陽、旅遊、看有關醫學的懸疑小說。`,
+    works:['MAIL：t114ab8050@ntut.org.tw']
+  },
+  {
+    name:'呂芯穎', role:'ms', roleLabel:'碩一生',
+    tags:['前端設計','Python','系統分析'],
+    photo:'image/114/114EP8002_呂芯穎.jpg', 
+    thumb:'YT',
+    bio:`我畢業於中原大學資管系，對大數據和人工智慧有興趣，也有做過相關專題。
+大學時比較擅長系統分析，平常的興趣是攝影、運動、拼樂高、看貓咪吃飯。
+如果找不到人去寵物展可以找我一起去！！`,
+    works:['MAIL：t114EP8002@ntut.org.tw']
+  },
+  {
+    name:'賴泓瑋', role:'ms', roleLabel:'碩一生',
+    tags:['Python','Flask框架應用','XGBoost','Adaboost','資料結構'],
+    photo:'image/114/114EP8012_賴泓瑋.jpg', 
+    thumb:'YT',
+    bio:`我畢業於中科大商經系，對人工智慧與數據分析感興趣
+大學也做過相關領域之專題，平常的興趣是聽音樂、追劇，烹飪、
+烘培。是個想聊天但不敢先開口的I人。`,
+    works:['MAIL：t114EP8012@ntut.org.tw']
+  },
+  {
+    name:'黃聖瑋', role:'ms', roleLabel:'碩一生',
+    tags:['C++','Java','Android'],
+    photo:'image/114/114EP8012_賴泓瑋.jpg', 
+    thumb:'YT',
+    bio:`我畢業於聯合大學資訊管理學系，對深度學習的應用有興趣，大學專題是做系統開發和人工智慧相關，興趣是打電動，彈吉他，鋼琴。是個活網仔，很愛講屁話，什麼都可以聊，最近想學習投資和coding，目標是趕快財富自由`,
+    works:['MAIL：t114ep8024@ntut.org.tw']
+  },
+  {
+    name:'鄭淮源', role:'ms', roleLabel:'碩一生',
+    tags:['C++程式設計','資料結構','英文'],
+    photo:'image/114/114EP8023_鄭淮源.JPG', 
+    thumb:'YT',
+    bio:'我畢業於中正大學資工系,雖然是資工系不過因為考研的關係其實coding並不強,大學的專題是做關於RNN的油畫模型輔助工具,平常的興趣是健身,看英文小說跟外國人文化交流,投資小白,最近也參加了北科的投資理財社哈哈哈',
+    works:['MAIL：t114EP8023@ntut.org.tw']
+  }
+  /*
+  {
+    name:'博士', role:'phd', roleLabel:'博士生',
     tags:['多模態','視覺語言','C++'],
-    photo:'image/114/114AB8003_吳姿穎.jpg', // 建議使用英數路徑
+    photo:'image/114/114AB8003_吳姿穎.jpg', 
     thumb:'YT',
     bio:'多模態檢索與臨床語意對齊，著重於報告生成與視覺問答。',
     works:['ReportGrounder (TMI 2024)','RAG for PACS (2025, under review)']
-  }
+  }*/
 ];
 
 const gallery = [

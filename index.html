@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>FAMI</title>
-  <meta name="description" content="XX 實驗室：研究主題、成員介紹、成果與合作資訊。Golden Horse 風格、深色金色系、互動豐富。" />
+  <meta name="description" content="" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;600;800&family=Noto+Serif+TC:wght@400;600;700;900&display=swap" rel="stylesheet">
@@ -26,7 +26,7 @@
         <a href="#about">關於</a>
         <a href="#research">研究主題</a>
         <a href="#members">成員</a>
-        <a href="#gallery">作品</a>
+        <a href="#gallery">相簿</a>
         <a href="#contact">聯絡</a>
       </nav>
       <button class="theme-toggle" id="toggleTheme" aria-label="切換主題">☾</button>
@@ -37,8 +37,8 @@
     <!-- Hero -->
     <section class="hero">
       <div class="wrap">
-        <h1 class="title reveal">打造能看見世界細節的智慧系統</h1>
-        <p class="subtitle reveal" style="transition-delay:.08s">我們專注於電腦視覺、醫學影像、機器人與嵌入式 AI，從演算法到實作，串連產學臨床的每一道光。</p>
+        <h1 class="title reveal">金融科技與智慧行銷實驗室</h1>
+        <p class="subtitle reveal" style="transition-delay:.08s">文字文字文字文字文字</p>
         <div class="cta reveal" style="transition-delay:.12s">
           <a class="btn" href="#members">查看成員</a>
           <a class="btn" href="#contact">產學合作</a>
@@ -55,20 +55,33 @@
         </div>
         <div class="about-grid" style="padding: 0 22px 22px;">
           <div>
-            <p>XX 實驗室結合資訊工程、電機電子與醫學影像，致力於從問題定義、資料治理、模型訓練到系統落地的一條龍研發。團隊與臨床醫療、產業夥伴長期合作，追求「<strong>可驗證、可維運、可擴展</strong>」的研究成果。</p>
+            <ul>
+              <li>不只是找出方法</li><p>我們更專注在人的問題或需求本身的性質利用資訊技術設計出不只是冰冷的方法而是更易於解釋 具有溫度 有效的解決方案</p>
+              <li>不只有資訊技術</li><p>我們訓練的不只是資訊技術也注重表達和呈現的能力每個人都能清楚的表達方法的完整邏輯跟概念</p>
+              <li>不需要單打獨鬥</li><p>我們是團體作戰不是各自埋頭苦幹藉由彼此間大量討論 相互學習進步</p>
+            </ul>
             <div style="margin:12px 0 4px;">
-              <span class="chip">電腦視覺</span>
-              <span class="chip">醫學影像</span>
-              <span class="chip">嵌入式 AI</span>
-              <span class="chip">感測融合</span>
-              <span class="chip">類比/混合訊號</span>
+              <span class="chip">深度學習</span>
+              <span class="chip">人工智慧</span>
+              <span class="chip">金融科技</span>
+              <span class="chip">大數據</span>
+              <span class="chip">CNN</span>
             </div>
           </div>
           <div>
             <ul class="timeline">
-              <li><strong>2025</strong>｜開源 <em>Med-Track</em> 影像實驗框架，整合 DICOM 與 TorchIO 流程。</li>
-              <li><strong>2024</strong>｜與某醫院合作導入腦核醫影像輔助判讀系統（IRB Approved）。</li>
-              <li><strong>2023</strong>｜提出 <em>SpecBalance CTLE</em> 頻譜自適應等化器模型，應用於 100BASE‑TX。</li>
+              <li>
+                <strong>2025.01.15</strong>｜ 實驗室榮獲金融科技創新獎
+                <p>本實驗室開發的區塊鏈支付系統獲得業界肯定...</p>
+              </li>
+              <li>
+                <strong>2025.01.10</strong>｜AI行銷模型發表會圓滿成功
+                <p>展示最新開發的智慧推薦系統與預測模型...</p>
+              </li>
+              <li>
+                <strong>2025.01.05</strong>｜產學合作新里程碑
+                <p>與國際金融機構簽署合作協議，共同開發...</p>
+              </li>
             </ul>
           </div>
         </div>
@@ -85,10 +98,10 @@
         <div class="paper" style="padding: 18px;">
           <div class="filters" aria-label="主題篩選">
             <button class="filter-btn active" data-area="all">全部</button>
-            <button class="filter-btn" data-area="cv">電腦視覺</button>
-            <button class="filter-btn" data-area="med">醫學影像</button>
-            <button class="filter-btn" data-area="robot">機器人/自駕</button>
-            <button class="filter-btn" data-area="edge">邊緣運算</button>
+            <button class="filter-btn" data-area="dl">深度學習</button>
+            <button class="filter-btn" data-area="Financial">金融</button>
+            <button class="filter-btn" data-area="data">數據</button>
+            <button class="filter-btn" data-area="ai">人工智慧</button>
             <button class="filter-btn" data-area="analog">類比/混合訊號</button>
           </div>
           <div class="member-grid" id="areaGrid">
@@ -111,8 +124,8 @@
               <button class="filter-btn active" data-role="all">全部</button>
               <button class="filter-btn" data-role="faculty">教授</button>
               <button class="filter-btn" data-role="phd">博士生</button>
-              <button class="filter-btn" data-role="ms">碩士生</button>
-              <button class="filter-btn" data-role="ra">專案/助理</button>
+              <button class="filter-btn" data-role="ms2">碩二生</button>
+              <button class="filter-btn" data-role="ms">碩一生</button>
               <button class="filter-btn" data-role="alumni">系友</button>
             </div>
             <input id="search" class="search" type="search" placeholder="搜尋姓名、關鍵字…" aria-label="搜尋成員" />
@@ -151,7 +164,7 @@
     <section id="gallery">
       <div class="wrap">
         <div class="sec-head">
-          <h2 class="sec-title">作品與剪影</h2>
+          <h2 class="sec-title">活動相簿</h2>
           <p class="sec-sub">Gallery</p>
         </div>
         <div class="paper" style="padding: 18px;">
@@ -165,21 +178,22 @@
       <div class="wrap">
         <div class="sec-head">
           <h2 class="sec-title">聯絡我們</h2>
-          <p class="sec-sub">Collaborations & Openings</p>
+          <!--<p class="sec-sub">Collaborations & Openings</p>-->
         </div>
         <div class="contact-grid">
           <div class="contact-item">
             <h3 style="margin-top:0">聯絡資訊</h3>
-            <p>信箱：<a href="mailto:lab@example.edu">lab@example.edu</a></p>
-            <p>地址：XXX 大學 資訊工程系 X 樓（XX 市 XX 區 XX 路）</p>
-            <p>招生：歡迎對 AI/影像/電路有熱忱的同學寄履歷（含作品/論文）</p>
+            <p>信箱：<a href="mailto:lab@ntut.org.tw">lab@ntut.org.tw</a></p>
+            <p>地址：國立台北科技大學 宏裕科技大樓B3F B325-1</p>
+            <p>臺北市大安區忠孝東路三段1號</p>
+            <p>期待在未來能看到更多的學弟妹一起加入FAIM(｡･ω･｡)</p>
           </div>
           <div class="contact-item">
-            <h3 style="margin-top:0">合作項目</h3>
+            <h3 style="margin-top:0">LAB設備與資源</h3>
             <ul>
-              <li>醫學影像 AI 模型開發（IRB 與資料治理）</li>
-              <li>智慧感測與嵌入式推論（NVIDIA Jetson/ARM）</li>
-              <li>高可靠類比/混合訊號設計與驗證</li>
+              <li>不斷電雙GPU伺服器</li>
+              <li>多台高階顯卡主機</li>
+              <li>空氣清淨機</li>
             </ul>
           </div>
         </div>
@@ -188,7 +202,7 @@
   </main>
 
   <footer>
-    <small>© <span id="y"></span> XX 實驗室．本頁面以黑×金×紙張質感為風格，設計靈感來自影展視覺語彙。</small>
+    <small>© <span id="y"></span>2025 FAIM Laboratory.</small>
   </footer>
 
   <!-- 成員詳情 Modal -->
