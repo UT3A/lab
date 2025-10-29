@@ -94,21 +94,22 @@ const members = [
     works:['MAIL：t114EP8012@ntut.org.tw']
   },
   {
-    name:'黃聖瑋', role:'ms', roleLabel:'碩一生',
-    tags:['C++','Java','Android'],
-    photo:'image/114/114EP8012_賴泓瑋.jpg', 
-    thumb:'YT',
-    bio:`我畢業於聯合大學資訊管理學系，對深度學習的應用有興趣，大學專題是做系統開發和人工智慧相關，興趣是打電動，彈吉他，鋼琴。是個活網仔，很愛講屁話，什麼都可以聊，最近想學習投資和coding，目標是趕快財富自由`,
-    works:['MAIL：t114ep8024@ntut.org.tw']
-  },
-  {
     name:'鄭淮源', role:'ms', roleLabel:'碩一生',
     tags:['C++程式設計','資料結構','英文'],
     photo:'image/114/114EP8023_鄭淮源.JPG', 
     thumb:'YT',
     bio:'我畢業於中正大學資工系,雖然是資工系不過因為考研的關係其實coding並不強,大學的專題是做關於RNN的油畫模型輔助工具,平常的興趣是健身,看英文小說跟外國人文化交流,投資小白,最近也參加了北科的投資理財社哈哈哈',
     works:['MAIL：t114EP8023@ntut.org.tw']
+  },
+  {
+    name:'黃聖瑋', role:'ms', roleLabel:'碩一生',
+    tags:['C++','Java','Android'],
+    photo:'image/114/114EP8012_賴泓瑋.jpg', 
+    thumb:'YT',
+    bio:`我畢業於聯合大學資訊管理學系，對深度學習的應用有興趣，大學專題是做系統開發和人工智慧相關，興趣是打電動，彈吉他，鋼琴。是個活網仔，很愛講屁話，什麼都可以聊，最近想學習投資和coding，目標是趕快財富自由`,
+    works:['MAIL：t114ep8024@ntut.org.tw']
   }
+  
   /*
   {
     name:'博士', role:'phd', roleLabel:'博士生',
